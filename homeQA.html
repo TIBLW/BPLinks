@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('logo-blowpet.jpg');
+      background-size:contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 12px 24px;
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      min-width: 120px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .mantec {
+      background-color: #007acc;
+    }
+
+    .mantec:hover {
+      background-color: #005f99;
+    }
+
+    .livemes {
+      background-color: #28a745;
+    }
+
+    .livemes:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 500px) {
+      .button-group {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sistemas</h1>
+    <div class="button-group">
+        <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=yy2Ps1FCk0uXevRp6zFQM2D0ASeYtD1Asup-wGRbAnZUNFFPV1UyTUM5Nzc0SDkyNjZEMFBEVkNWVi4u" class="button mantec" target="_blank">Inspeção Injetora</a>
+        <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=yy2Ps1FCk0uXevRp6zFQM2D0ASeYtD1Asup-wGRbAnZUNFFPV1UyTUM5Nzc0SDkyNjZEMFBEVkNWVi4u" class="button mantec" target="_blank">Inspeção Sopro</a>  
+        <a href="https://app.livemes.com" class="button livemes" target="_blank">LiveMES</a>
+    </div>
+  </div>
+</body>
+</html>
